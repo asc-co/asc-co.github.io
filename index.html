@@ -3,134 +3,116 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ASC </title>
+  <title>ASC</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="stylesheet" href="web.css">
 </head>
+
 <body>
 
+<header class="header">
+  <div class="container header-inner">
+    <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg" alt="Company Logo" class="logo">
 
-  <header class="header">
-    <div class="container header-inner">
-      <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg" alt="Company Logo" class="logo">
+    <nav class="nav" id="nav-links">
+      <a data-lang="nav_about" href="#us"></a>
+      <a data-lang="nav_vision" href="#vision"></a>
+      <a data-lang="nav_institute" href="web2.html"></a>
+      <a data-lang="nav_contact" href="#contact"></a>
+    </nav>
 
-   
-      <nav class="nav" id="nav-links">
-        <a href="#us">About ASC </a>
-        <a href="#vision">Our Vision</a>
-        <a href="web2.html">Our Institute</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="menu-toggle" id="menu-toggle">☰</button>
+    <!-- Language Switch -->
+    <div class="language-switch">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('ar')">AR</button>
     </div>
-  </header>
 
-  <section class="hero container">
-    <h1>ASC</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eius harum corrupti laudantium eveniet repellendus eaque tempora quas fuga vitae beatae nesciunt veniam, necessitatibus aliquid, ducimus ea facilis ab perspiciatis!.</p>
-    <!-- <a href="#contact" class="btn">Let’s Talk</a> -->
-  </section>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </div>
+</header>
 
+<section class="hero container">
+  <h1 data-lang="hero_title"></h1>
+  <p data-lang="hero_text"></p>
+</section>
 
-  <section id="us" class="section container">
-    <h2>About ASC</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ASC</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quis repellat aut? Omnis similique, nam iusto voluptas reiciendis veritatis impedit aut doloribus nisi exercitationem cum totam, quibusdam, beatae numquam officiis!</p>
-      </div>
-      <div class="card">
-        <h3>ASC</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, dolorem cum? Quod, animi cumque. Autem impedit sequi magnam, qui minima quis ipsum non deserunt? Error dolorum tenetur hic sint doloribus.</p>
-      </div>
-      <div class="card">
-        <h3>ASC</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto aperiam, consectetur quod maxime iure tenetur possimus corrupti voluptate nostrum totam tempore inventore sunt? Odio, consequuntur earum. Voluptatum repellat odio voluptatem?</p>
-      </div>
+<section id="us" class="section container">
+  <h2 data-lang="about_title"></h2>
+  <div class="grid">
+    <div class="card">
+      <h3>ASC</h3>
+      <p data-lang="about_card1"></p>
     </div>
-  </section>
-
-
-  <section id="vision" class="section container">
-    <h2>our vision</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg" alt="Project 1">
-        <h3>Project One</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse pariatur ducimus fugit! Inventore nostrum harum saepe fugit facere suscipit. Repudiandae molestias laboriosam hic repellendus autem! Eligendi laudantium dolores voluptatem! Iure..</p>
-      </div>
-      <div class="card">
-        <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg" alt="Project 2">
-        <h3>Project Two</h3>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam, consequuntur nostrum hic voluptas eius quasi fuga aut labore esse omnis maxime officia, numquam necessitatibus explicabo quam itaque. Magnam, delectus repudiandae?.</p>
-      </div>
+    <div class="card">
+      <h3>ASC</h3>
+      <p data-lang="about_card2"></p>
     </div>
-  </section>
-
-
-  <section id="mission" class="section container">
-    <h2>ASC</h2>
-    <div class="grid">
-      <div class="card">
-        <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg" alt="mission1">
-        <h3> ASC</h3>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae facilis excepturi dolorum molestiae enim quidem hic, sapiente, recusandae libero nobis eveniet? Delectus, explicabo nobis. Accusantium inventore impedit optio officiis commodi?</p>
-      </div>
-      <div class="card">
-        <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg" alt="mission">
-        <h3>ASC</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime, reiciendis est perferendis nulla aliquam odit libero quaerat velit, excepturi expedita explicabo. Eum laudantium, necessitatibus modi quae quidem error aperiam placeat?</p>
-      </div>
+    <div class="card">
+      <h3>ASC</h3>
+      <p data-lang="about_card3"></p>
     </div>
-  </section>
+  </div>
+</section>
 
- 
-  <section id="contact" class="section container">
-  <section class="contact">
-  <h2>Contact Us</h2>
+<section id="vision" class="section container">
+  <h2 data-lang="vision_title"></h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg">
+      <h3 data-lang="vision_card1_title"></h3>
+      <p data-lang="vision_card1_text"></p>
+    </div>
+    <div class="card">
+      <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg">
+      <h3 data-lang="vision_card2_title"></h3>
+      <p data-lang="vision_card2_text"></p>
+    </div>
+  </div>
+</section>
+
+<section id="mission" class="section container">
+  <h2 data-lang="mission_title"></h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg">
+      <h3>ASC</h3>
+      <p data-lang="mission_card1_text"></p>
+    </div>
+    <div class="card">
+      <img src="https://pbs.twimg.com/profile_images/1734297856641556480/hjPLN1hR_400x400.jpg">
+      <h3>ASC</h3>
+      <p data-lang="mission_card2_text"></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section container">
+  <h2 data-lang="contact_title"></h2>
 
   <div class="contact-info">
-    <p><i class="fas fa-phone"></i> 000 000 000</p>
-    <p><i class="fas fa-envelope"></i> example@example.cpm</p>
-    <p><i class="fas fa-map-marker-alt"></i>Saudi Arabia.</p>
+    <p><i class="fas fa-phone"></i> <span data-lang="contact_phone"></span></p>
+    <p><i class="fas fa-envelope"></i> <span data-lang="contact_email"></span></p>
+    <p><i class="fas fa-map-marker-alt"></i> <span data-lang="contact_location"></span></p>
   </div>
 
   <div class="social-icons">
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-x-twitter"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+    <a><i class="fab fa-instagram"></i></a>
+    <a><i class="fab fa-facebook"></i></a>
+    <a><i class="fab fa-x-twitter"></i></a>
+    <a><i class="fab fa-youtube"></i></a>
+    <a><i class="fab fa-linkedin"></i></a>
   </div>
-
-  <!-- <p class="last-modified">Last Modified 09/11/2025 1:46 PM</p> -->
 </section>
 
+<footer class="footer">
+  <div class="container">
+    <p>© 2025 ASC. All rights reserved.</p>
+  </div>
+</footer>
 
-
-    <!-- <form class="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form> -->
-  </section>
-
-
-  <footer class="footer">
-    <div class="container">
-      <p>© 2025 ASC. All rights reserved.</p>
-      <!-- <nav class="footer-nav">
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-        <a href="#">Careers</a> -->
-      </nav>
-    </div>
-  </footer>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  <script src="web.js"></script>
-
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="web.js"></script>
+<script src="lang.js"></script>
 </body>
 </html>

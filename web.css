@@ -184,6 +184,7 @@ body {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
   }
   .nav.show {
     display: flex;
@@ -214,9 +215,17 @@ body {
   margin-right: 10px;
   color: #151531;            
 }
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* Centers horizontally */
+}
 
 .social-icons {
   margin: 20px 0;
+  display: flex;
+  justify-content: center;   /* Centers icons */
+  gap: 15px;  
 }
 
 .social-icons a {
@@ -235,4 +244,84 @@ body {
   font-size: 12px;
   margin-top: 20px;
   color: #ccc;
+}
+
+body[style*="direction: rtl"] .nav a {
+  float: right;
+}
+
+.language-switch {
+  display: flex;
+  gap: 8px;
+}
+
+.language-switch button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background:#151531;
+    padding: 10px;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+.language-switch {
+  display: flex;
+  gap: 8px;
+  margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .language-switch {
+    margin: 10px 0;
+  }
+}
+
+/* Hide language-switch on mobile by default */
+@media (max-width: 768px) {
+  .language-switch {
+    display: none;
+  }
+
+  /* When inside the mobile menu, show it */
+  .nav.show .language-switch {
+    display: flex;
+    margin-top: 10px;
+  }
+}
+
+html[dir="rtl"] .nav {
+  left: 20px !important;
+  right: auto !important;
+}
+
+/* When English: open menu on the RIGHT */
+html[dir="ltr"] .nav {
+  right: 20px !important;
+  left: auto !important;
 }

@@ -1,0 +1,30 @@
+{
+  "nav_about": "About ASC",
+  "nav_vision": "Our Vision",
+  "nav_institute": "Our Institute",
+  "nav_contact": "Contact",
+  "nav_mission": "Our mission",
+
+  "hero_title": "ASC",
+  "hero_text": "ASC is a training institute dedicated to developing skills, enhancing knowledge, and empowering individuals through high-quality educational programs and workshops.",
+
+  "about_title": "About ASC",
+  "about_card1": "ASC provides training programs designed to meet personal and professional development needs.",
+  "about_card2": "We strive to create a learning environment that encourages creativity, growth, and excellence.",
+  "about_card3": "Our programs are delivered by qualified trainers to ensure impactful learning experiences.",
+
+  "vision_title": "Our Vision",
+  "vision_card1_title": "Growth and Development",
+  "vision_card1_text": "We aim to support the community by empowering individuals to grow and contribute effectively.",
+  "vision_card2_title": "Innovation and Excellence",
+  "vision_card2_text": "We work to create educational initiatives that inspire creativity and excellence.",
+
+  "mission_title": "Our Mission",
+  "mission_card1_text": "Our mission is to deliver training solutions that help individuals enhance performance and achieve success.",
+  "mission_card2_text": "We believe in building strong foundations for personal and professional progress.",
+
+  "contact_title": "Contact Us",
+  "contact_phone": "Phone",
+  "contact_email": "Email",
+  "contact_location": "Saudi Arabia"
+}
